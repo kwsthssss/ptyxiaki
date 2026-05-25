@@ -52,6 +52,8 @@ data_raw/Twitter15_16_dataset/
 
 ## Setup On Another Computer
 
+For Windows-specific instructions, see [WINDOWS.md](WINDOWS.md).
+
 Clone the repository:
 
 ```bash
