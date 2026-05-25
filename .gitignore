@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Raw Twitter15/16 data is intentionally excluded for size/licensing reasons.
+data_raw/
+
+# Keep the GitHub repository code-only. Data, generated artifacts, reports,
+# thesis sources/PDFs and figures stay local unless intentionally published.
+data_clean/
+research/
+docs/
+thesis/
+thesis_lualatex_project/
+
+# Generated/duplicate archives and LaTeX intermediates.
+*.zip
