@@ -3,6 +3,14 @@
 Clean source-code repository for the Twitter15/16 news-diffusion thesis
 experiments.
 
+## Thesis Details
+
+- Student: Κωστής Γεώργιος
+- Student ID: Π2020030
+- Supervisor: Κανάβος Ανδρέας
+- Academic year: 2025–2026
+- Thesis title: Διάχυση Ειδησεογραφικής Πληροφορίας στα Κοινωνικά Δίκτυα
+
 This GitHub repository intentionally contains only code and minimal execution
 metadata. Datasets, generated CSV/JSON artifacts, reports, thesis text, figures,
 PDFs and raw data are not committed.
