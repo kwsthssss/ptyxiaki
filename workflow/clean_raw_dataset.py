@@ -272,6 +272,9 @@ def build():
     summary_path = clean_root / "cleaning_summary.json"
     report_path = docs_root / "cleaning_report.md"
 
+    def rel(path):
+        return str(path.relative_to(project_root))
+
     events_fields = [
         "event_key",
         "split",
@@ -336,13 +339,13 @@ def build():
 
     summary = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "input_root": str(raw_root),
+        "input_root": rel(raw_root),
         "output_files": {
-            "events_clean": str(events_path),
-            "nodes_clean": str(nodes_path),
-            "edges_clean": str(edges_path),
-            "summary_json": str(summary_path),
-            "report_md": str(report_path),
+            "events_clean": rel(events_path),
+            "nodes_clean": rel(nodes_path),
+            "edges_clean": rel(edges_path),
+            "summary_json": rel(summary_path),
+            "report_md": rel(report_path),
         },
         "totals": {
             "events": 0,
@@ -474,7 +477,7 @@ def build():
                         "invalid_delay_values": parsed["invalid_delay_values"],
                         "dropped_self_loops": parsed["dropped_self_loops"],
                         "dropped_duplicate_edges": parsed["dropped_duplicate_edges"],
-                        "tree_file": str(tree_path),
+                        "tree_file": rel(tree_path),
                         "source_text": source_text,
                     }
                 )

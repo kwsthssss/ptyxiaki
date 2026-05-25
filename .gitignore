@@ -8,13 +8,19 @@ venv/
 # Raw Twitter15/16 data is intentionally excluded for size/licensing reasons.
 data_raw/
 
-# Keep the GitHub repository code-only. Data, generated artifacts, reports,
-# thesis sources/PDFs and figures stay local unless intentionally published.
-data_clean/
-research/
+# Generated artifacts, reports, thesis sources/PDFs and figures stay local.
 docs/
 thesis/
 thesis_lualatex_project/
+research/advanced/
+research/descriptive/
+research/stats/
+research/baseline_results.csv
+research/event_features.csv
+research/final_thesis_dataset.csv
+research/research_summary.json
+research/splits.csv
+research/supplementary_models/supplementary_summary.json
 
 # Generated/duplicate archives and LaTeX intermediates.
 *.zip

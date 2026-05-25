@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-05-06T14:12:02",
+  "input_root": "data_raw/Twitter15_16_dataset",
+  "output_files": {
+    "events_clean": "data_clean/events_clean.csv",
+    "nodes_clean": "data_clean/nodes_clean.csv",
+    "edges_clean": "data_clean/edges_clean.csv",
+    "summary_json": "data_clean/cleaning_summary.json",
+    "report_md": "docs/cleaning_report.md"
+  },
+  "totals": {
+    "events": 2308,
+    "nodes": 947024,
+    "edges": 956786,
+    "missing_source_rows": 0,
+    "missing_tree_files": 0,
+    "event_tree_id_mismatches": 17,
+    "events_with_negative_delay": 27,
+    "malformed_lines": 0,
+    "invalid_delay_values": 0,
+    "dropped_self_loops": 2171,
+    "dropped_duplicate_edges": 26729
+  },
+  "split_counts": {
+    "twitter15": 1490,
+    "twitter16": 818
+  },
+  "label_counts": {
+    "false": 575,
+    "true": 579,
+    "unverified": 575,
+    "non-rumor": 579
+  },
+  "label_counts_by_split": {
+    "twitter15": {
+      "false": 370,
+      "true": 372,
+      "unverified": 374,
+      "non-rumor": 374
+    },
+    "twitter16": {
+      "true": 207,
+      "false": 205,
+      "unverified": 201,
+      "non-rumor": 205
+    }
+  }
+}
